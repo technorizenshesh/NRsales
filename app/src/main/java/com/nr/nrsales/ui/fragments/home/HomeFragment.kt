@@ -31,7 +31,9 @@ class HomeFragment : BaseFragment(R.layout.fragment_home) {
             if (item.itemId == R.id.logout) {
                 mBinding.drawerLayout.close()
                 val alertDialogBuilder = AlertDialog.Builder(context)
-                alertDialogBuilder.setMessage("are sure you want to logout").setCancelable(false).setPositiveButton(
+                alertDialogBuilder.setMessage("are sure you want to logout")
+                    .setCancelable(false)
+                    .setPositiveButton(
                     "yes"
                 ) { dialog, _ ->
                     dialog.cancel()
