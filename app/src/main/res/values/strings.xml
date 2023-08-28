@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">NRsales</string>
+    <string name="password">password</string>
+    <string name="email_id">email</string>
+    <string name="login">Log In</string>
+    <string name="loading">Loading…</string>
+    <string name="complete">Complete!</string>
+    <string name="sign_in">Sign In</string>
+    <string name="already_have_any_account">Already have any Account ?</string>
+    <string name="submit">Submit</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="with_your_email_id">With your Email-id</string>
+    <string name="sign_up">SignUp</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="username">Username</string>
+    <string name="don_t_have_a_account">Don\'t have a Account ?</string>
+    <string name="invalid_email">Please enter email address</string>
+    <string name="valid_email">Please enter valid email address</string>
+    <string name="invalid_password">Please enter password</string>
+    <string name="invalid_first_name">Please enter first name</string>
+    <string name="invalid_last_name">Please enter last name</string>
+    <string name="invalid_mobile">Please enter mobile</string>
+    <string name="invalid_confirm_password">Please enter confirm password</string>
+    <string name="password_should_be_same">Password should be same</string>
+    <string name="invalid_password_length">Password length must be between 6–15 characters.</string>
+    <string name="invalid_device_token">Invalid device token</string>
+    <string name="invalid_device_id">Invalid device id</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/splashFragment">
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.nr.nrsales.ui.fragments.SplashFragment"
+        android:label="SplashFragment"
+        tools:layout="@layout/fragment_splash">
+        <action
+            android:id="@+id/action_splashFragment_to_LoginFragment"
+            app:destination="@id/loginFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation"/>
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.nr.nrsales.ui.fragments.login_signup.LoginFragment"
+        android:label="LoginFragment"
+        tools:layout="@layout/fragment_login">
+
+        <action
+            android:id="@+id/action_LoginFragment_to_signupFragment"
+            app:destination="@id/registerFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation"/>
+
+    </fragment>
+    <fragment
+        android:id="@+id/registerFragment"
+        android:name="com.nr.nrsales.ui.fragments.login_signup.RegisterFragment"
+        tools:layout="@layout/fragment_register">
+        <action
+            android:id="@+id/action_registerFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation"/>
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.nr.nrsales.ui.fragments.home.HomeFragment"
+        android:label="HomeFragment"
+         tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_homeFragment_to_splashFragment"
+            app:destination="@id/splashFragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@id/navigation"/>
+        <action
+            android:id="@+id/action_homeFragment_to_getAQuoteFragment"
+            app:destination="@id/getAQuoteFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getAQuoteFragment"
+        android:name="com.nr.nrsales.ui.fragments.home.GetAQuoteFragment"
+        android:label="GetAQuoteFragment"
+        tools:layout="@layout/fragment_get_a_quote"/>
+</navigation>
